@@ -7,7 +7,7 @@ class Character < ActiveRecord::Base
   end
 
   def build_show
-    shows.find(self.show_id)
+    self.show.id
   end
 
   def build_network
