@@ -7,7 +7,6 @@ class Character < ActiveRecord::Base
   end
 
   def build_show
-    binding.pry
     shows.find(self.show_id)
   end
 
