@@ -4,6 +4,6 @@ class Show < ActiveRecord::Base
 
   def build_network(letters)
     binding.pry
-    self.network = Network.find_or_create_by(call_letters: letters)
+    self.network = Network.find_or_create_by(letters)
   end
 end
