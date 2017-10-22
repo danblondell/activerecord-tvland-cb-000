@@ -8,7 +8,7 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     self.characters.map do | character |
-
+      "#{character[:name]} – #{shows.find_by(character.show_id)}"
     end
   end
 end
