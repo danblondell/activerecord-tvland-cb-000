@@ -3,6 +3,6 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def build_network(letters)
-    self.network = 
+    self.network = networks.find_or_create_by(call_letters: letters)
   end
 end
