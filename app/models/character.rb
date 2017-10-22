@@ -5,12 +5,4 @@ class Character < ActiveRecord::Base
   def say_that_thing_you_say
     "#{self.name} always says: #{self.catchphrase}"
   end
-
-  # def build_show(name)
-  #   self.show = Show.find_or_create_by(name: name)
-  # end
-  #
-  # def build_network
-  #   networks.find(build_show.network_id)
-  # end
 end
